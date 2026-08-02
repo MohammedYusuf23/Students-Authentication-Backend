@@ -11,8 +11,6 @@ export const validate = (schema) => {
         })),
       });
     }
-
-    // Replace req.body with validated/sanitized data
     req.body = result.data;
 
     next();
